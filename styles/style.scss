@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+
+body {
+  @apply bg-slate-900 text-slate-100 m-0 p-0;
+}
+
+h1 {
+  @apply text-4xl capitalize text-purple-700;
+  letter-spacing: 3px;
+}
+
+.buttonGroup {
+  @apply flex flex-row gap-5 justify-between;
+}
+
+.formGroup {
+  @apply flex flex-col;
+}
+
+.blogTitle {
+  @apply bg-slate-800 text-xl text-slate-100 p-3 flex justify-between items-center capitalize;
+}
+
+.blogBody {
+  @apply border-2 p-3 border-slate-800;
+}
+
+@tailwind utilities;
+
+button {
+  @apply bg-teal-500 py-3 px-10;
+
+  &:hover {
+    @apply bg-teal-300;
+  }
+}
+
+input {
+  @apply bg-slate-200 text-slate-600 border-none py-1 px-5 my-3;
+}
