@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next";
 
 export default function HomePage() {
   const [score, setScore] = useState(0);
@@ -17,14 +18,16 @@ export default function HomePage() {
       <button onClick={increaseScore}>
         Plus One! <b>{score}</b>
       </button>
-
-      <a href="/account">
-        <button className="w-full">Dashboard</button>
-      </a>
-
-      <a href="/articles">
-        <button className="w-full">Articles</button>
-      </a>
+      <Link href="/account">
+        <a>
+          <button className="w-full">Dashboard</button>
+        </a>
+      </Link>
+      <Link href="/articles">
+        <a>
+          <button className="w-full">Articles</button>
+        </a>
+      </Link>
     </div>
   );
 }
