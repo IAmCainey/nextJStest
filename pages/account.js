@@ -7,14 +7,12 @@ const Dash = () => {
   const supabase = useSupabaseClient();
 
   return (
-    <div className="container max-w-4xl m-auto items-center">
-      <div className="bg-slate-800">
-        {!session ? (
-          <Auth supabaseClient={supabase} />
-        ) : (
-          <Account session={session} />
-        )}
-      </div>
+    <div>
+      {!session ? (
+        <Auth supabaseClient={supabase} />
+      ) : (
+        <Account session={session} />
+      )}
     </div>
   );
 };

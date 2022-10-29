@@ -19,14 +19,10 @@ export default function HomePage() {
         Plus One! <b>{score}</b>
       </button>
       <Link href="/account">
-        <a>
-          <button className="w-full">Dashboard</button>
-        </a>
+        <button className="w-full">Dashboard</button>
       </Link>
       <Link href="/articles">
-        <a>
-          <button className="w-full">Articles</button>
-        </a>
+        <button className="w-full">Articles</button>
       </Link>
     </div>
   );
