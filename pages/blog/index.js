@@ -1,15 +1,19 @@
-import { supabase } from "../utils/supabase";
+import { supabase } from "../../utils/supabase";
+
+import Link from "next/link";
 
 export default function Blog({ blogs }) {
   return (
-    <div className="max-w-4xl m-auto mt-10 flex flex-col gap-10">
+    <div id="top" className="max-w-4xl m-auto mt-10 flex flex-col gap-10">
       <h1>blog</h1>
       {blogs.map((blog) => (
         <div key={blog.id} className="flex flex-col">
           <div className="blogTitle">
             <div>{blog.title}</div>{" "}
             <div>
-              <button>View</button>
+              <Link href={`/blog/${encodeURIComponent(blog.slug)}`}>
+                <button>View</button>
+              </Link>
             </div>
           </div>
           <div className="blogBody">{blog.body}</div>

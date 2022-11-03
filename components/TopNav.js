@@ -9,7 +9,7 @@ export default function TopNav() {
         <div className="topNav">
           <Link href="/">home</Link>
           <Link href="/projects">projects</Link>
-          <Link href="/articles">blog</Link>
+          <Link href="/blog">blog</Link>
           <Link href="/account">dashboard</Link>
         </div>
       </div>

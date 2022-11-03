@@ -21,9 +21,6 @@ export default function HomePage() {
       <Link href="/account">
         <button className="w-full">Dashboard</button>
       </Link>
-      <Link href="/articles">
-        <button className="w-full">Articles</button>
-      </Link>
     </div>
   );
 }
