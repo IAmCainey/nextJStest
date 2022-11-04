@@ -1,10 +1,14 @@
 import { supabase } from "../../utils/supabase";
 
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Blog({ blogs }) {
   return (
     <div id="top" className="max-w-4xl m-auto mt-10 flex flex-col gap-10">
+      <Head>
+        <title>This is a text blog</title>
+      </Head>
       <h1>blog</h1>
       {blogs.map((blog) => (
         <div key={blog.id} className="flex flex-col">
