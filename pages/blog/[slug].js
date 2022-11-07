@@ -7,6 +7,7 @@ export default function SingleBlog({ blog }) {
     <div className="max-w-4xl m-auto mt-10">
       <Head>
         <title>Testing | {blog.title}</title>
+        <meta name="description" content={blog.meta_desc} />
       </Head>
       <div className="text-2xl capitalize border-l-8 border-l-purple-700 pl-3 pr-10 max-w-fit">
         {blog.title}
